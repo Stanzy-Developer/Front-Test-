@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(117deg, #060b27 0%, #2f014c 100%);
+  background-repeat: no-repeat;
+}
+
+#select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  background-image: url("./assets/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 90%;
+  outline: none;
+}
+
+.active {
+  background: #250442;
+  color: white;
+}
+
+.location .recharts-wrapper .recharts-cartesian-grid-vertical line:last-child,
+.recharts-wrapper .recharts-cartesian-grid-vertical line:nth-last-child(2) {
+  stroke-opacity: 0 !important;
+}
+
+.websiteAnalytics
+  .yAxis
+  .recharts-cartesian-axis-ticks
+  .recharts-layer
+  .recharts-text {
+  display: none;
+}
+.websiteAnalytics
+  .xAxis
+  .recharts-cartesian-axis-ticks
+  .recharts-layer
+  .recharts-text {
+  font-size: 11px;
+}
+
+#check:checked + span {
+  display: none;
+}
+
+@layer utilities {
+  .heading {
+    background: linear-gradient(180deg, #f6f6f7 14.29%, #7e808f 82.14%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Space Grotesk;
+    font-weight: 700;
+  }
+
+  .boxShadow {
+    box-shadow: 2px 2px 4px 0px rgba(15, 10, 15, 0.5),
+      -2px -2px 4px 0px rgba(41, 82, 113, 0.5),
+      0px 1px 250px 0px rgba(5, 16, 24, 0.1) inset;
+  }
+
+  .shadow2 {
+    box-shadow: 2px 2px 4px 0px rgba(15, 10, 15, 0.5),
+      -0.5px -0.5px 2px 0px rgba(41, 82, 113, 0.5),
+      0px 1px 250px 0px rgba(5, 16, 24, 0.1) inset;
+  }
+}
